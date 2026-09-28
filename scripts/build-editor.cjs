@@ -1,0 +1,1 @@
+const esbuild=require('esbuild');const fs=require('fs');esbuild.buildSync({entryPoints:['resources/js/editor.js'],bundle:true,format:'esm',minify:true,legalComments:'eof',outfile:'public/vendor/ckeditor.js'});fs.copyFileSync('node_modules/ckeditor5/dist/ckeditor5.css','public/vendor/ckeditor.css');
